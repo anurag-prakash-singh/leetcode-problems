@@ -92,7 +92,7 @@ func prisonAfterNDays(cells []int, N int) []int {
 	}
 
 	if lastSeen[num] == 0 {
-		N = N%(checkedOffset-lastSeen[num]) + 1
+		N = N % (checkedOffset - lastSeen[num])
 	} else {
 		N = (N % (checkedOffset - lastSeen[num])) + (checkedOffset - lastSeen[num] - 1)
 	}
